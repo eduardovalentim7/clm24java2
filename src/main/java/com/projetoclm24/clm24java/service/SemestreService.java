@@ -46,6 +46,12 @@ public class SemestreService {
         );
     }
 
+    //contagem de semestres
+    @Transactional(readOnly = true)
+    public Long GetTotalElements(){
+        return this.repository.count();
+    }
+
 
 
 }

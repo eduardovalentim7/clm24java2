@@ -40,5 +40,10 @@ public class SemestreController {
     public Semestre getById(@PathVariable Long id){
         return service.findById(id);
     }
+
+    @GetMapping("total")
+    public Long GetTotalSemestres(){
+        return service.GetTotalElements();
+    }
 }
 

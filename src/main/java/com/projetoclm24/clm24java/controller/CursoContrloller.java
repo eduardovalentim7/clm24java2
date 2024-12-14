@@ -14,6 +14,7 @@ public class CursoContrloller {
     @Autowired
     private CursoService service;
 
+    //insere em lote (Query by Keywords)
 @PostMapping
     public List<Curso> salvar (@RequestBody List<Curso> cursos){
     return this.service.save(cursos);

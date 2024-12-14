@@ -15,7 +15,7 @@ public class CursoService {
  @Autowired
     private CursoRepository repository;
 
- //insert
+ //insert em lote
  @Transactional(readOnly = false)
  public List<Curso> save(List<Curso> curso){
      return this.repository.saveAll(curso);
